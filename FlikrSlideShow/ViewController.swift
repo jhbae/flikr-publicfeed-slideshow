@@ -21,9 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var termSlider: UISlider!
     @IBOutlet weak var toggleStartBtn: UIButton!
 
-    private var isStoped = true
-
-    lazy private var slideShowViewModel: SlideShowViewModel = SlideShowViewModel(stopFunc:self.stopSlideShow, startFunc:self.startSlideShow, updateImageView: self.updateImage)
+    lazy private var slideShowViewModel: SlideShowViewModel = SlideShowViewModel(updateImageView: self.updateImage)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,36 +41,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnClicked(sender: UIButton) {
-        if self.isStoped {
+        if self.slideShowViewModel.isStopped() == true {
             startSlideShow()
         } else {
             stopSlideShow()
         }
     }
 
-    func startSlideShow() {
+    private func startSlideShow() {
         self.slideShowViewModel.startLoading()
 
         self.toggleStartBtn.setTitle("멈춤", forState: .Normal)
         self.termSlider.enabled = false
 
-        self.isStoped = false
-
         return
     }
 
-    func stopSlideShow() {
+    private func stopSlideShow() {
         self.slideShowViewModel.stopLoading()
 
         self.toggleStartBtn.setTitle("시작", forState: .Normal)
         self.termSlider.enabled = true
-
-        self.isStoped = true
     }
 
     func updateImage(urlString:String) {
 
-        if self.isStoped == false {
+        if self.slideShowViewModel.isStopped() == false {
             let url = NSURL(string: urlString)
 
             self.feedImgView.af_setImageWithURL(url!,

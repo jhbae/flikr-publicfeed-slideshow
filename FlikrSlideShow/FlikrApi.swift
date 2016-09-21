@@ -11,6 +11,7 @@ import Foundation
 import Alamofire
 import AlamofireRSSParser
 
+
 class FlikerApi {
 
     static let sharedInstance = FlikerApi()

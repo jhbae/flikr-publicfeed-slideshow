@@ -23,48 +23,48 @@ private let MIN_FEED_LEFT_LIMIT = 5
 
 class SlideShowViewModel {
 
-    var stopSlideShow: StopSlide
-    var startSlideShow: StartSlide
     var updateImage: UpdateImage
 
-    private var isStopped: Bool = true
+    private var stopped: Bool = true
     private var feeds: [RSSItem] = []
     private var curIndex = 0
 
-    init (stopFunc:StopSlide, startFunc:StartSlide, updateImageView:UpdateImage) {
-        self.stopSlideShow = stopFunc
-        self.startSlideShow = startFunc
+    init (updateImageView:UpdateImage) {
         self.updateImage = updateImageView
     }
 
 
-    func increaseIndex() {
-        self.curIndex += 1
+    func isStopped() -> Bool {
+        return stopped
     }
 
 
     func stopLoading() {
-        self.isStopped = true
+        self.stopped = true
         self.curIndex = 0
         self.feeds = []
     }
 
     func startLoading() {
-        self.isStopped = false
+        self.stopped = false
         self.loadFeeds()
     }
 
 
     func doSlideShow() {
-        if self.isStopped == false
+        if self.stopped == false
             && self.feeds.count - MIN_FEED_LEFT_LIMIT > self.curIndex {
             self.updateImage(self.feeds[self.curIndex].mediaContent!)
             self.increaseIndex()
 
-        } else if self.isStopped == false
+        } else if self.stopped == false
             && self.feeds.count - MIN_FEED_LEFT_LIMIT <= self.curIndex {
             loadFeeds()
         }
+    }
+
+    private func increaseIndex() {
+        self.curIndex += 1
     }
 
     private func loadFeeds() {
