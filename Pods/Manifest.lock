@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - AlamofireRSSParser (1.0.7):
+    - Alamofire (~> 3.5)
+  - Bolts-Swift (1.2.0)
+  - EasyMapping (0.18.1):
+    - EasyMapping/Core (= 0.18.1)
+  - EasyMapping/Core (0.18.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.5.0)
+  - AlamofireImage (~> 2.0)
+  - AlamofireRSSParser (from `https://github.com/AdeptusAstartes/AlamofireRSSParser.git`,
+    tag `1.0.7`)
+  - Bolts-Swift (~> 1.2.0)
+  - EasyMapping (~> 0.18)
+
+EXTERNAL SOURCES:
+  AlamofireRSSParser:
+    :git: https://github.com/AdeptusAstartes/AlamofireRSSParser.git
+    :tag: 1.0.7
+
+CHECKOUT OPTIONS:
+  AlamofireRSSParser:
+    :git: https://github.com/AdeptusAstartes/AlamofireRSSParser.git
+    :tag: 1.0.7
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  AlamofireRSSParser: 2bd980618e7bc57311c9ce90589bdb0139b6d4b3
+  Bolts-Swift: ac4e7d26719ed0f73aa85b9310da1648105fbde3
+  EasyMapping: 2637b5bac13b6450bc799c28791a419e58c946b0
+
+COCOAPODS: 0.39.0

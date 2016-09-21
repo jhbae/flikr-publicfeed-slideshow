@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dyC-6U-g1J">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Eeo-Hb-Qiy">
+            <objects>
+                <viewController id="dyC-6U-g1J" customClass="ViewController" customModule="FlikrSlideShow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8iB-Fu-eXi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Des-Jf-LH0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dib-BR-ZQx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w8M-Vf-V5c">
+                                <rect key="frame" x="0.0" y="20" width="600" height="500"/>
+                                <color key="tintColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-04-zb1">
+                                <rect key="frame" x="550" y="550" width="30" height="30"/>
+                                <state key="normal" title="시작"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="dyC-6U-g1J" eventType="touchUpInside" id="EPd-dm-B2b"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="eDF-FX-d2D">
+                                <rect key="frame" x="410" y="550" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="EQF-qf-zx9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="secondValueChanged:" destination="dyC-6U-g1J" eventType="valueChanged" id="19U-ca-lv0"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFR-El-Fjm" userLabel="secIndicator">
+                                <rect key="frame" x="490" y="577" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="초" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-FX-tEt">
+                                <rect key="frame" x="511" y="577" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Des-Jf-LH0" firstAttribute="top" secondItem="w8M-Vf-V5c" secondAttribute="bottom" constant="80" id="5p9-5g-a4y"/>
+                            <constraint firstAttribute="trailing" secondItem="w8M-Vf-V5c" secondAttribute="trailing" id="7uY-5Y-b8D"/>
+                            <constraint firstAttribute="trailing" secondItem="OGe-04-zb1" secondAttribute="trailing" constant="20" id="C1Q-S2-k3J"/>
+                            <constraint firstItem="w8M-Vf-V5c" firstAttribute="top" secondItem="8iB-Fu-eXi" secondAttribute="bottom" id="SV4-Cf-zkP"/>
+                            <constraint firstItem="eDF-FX-d2D" firstAttribute="top" secondItem="OGe-04-zb1" secondAttribute="top" id="SuO-fa-noz"/>
+                            <constraint firstItem="OGe-04-zb1" firstAttribute="top" secondItem="w8M-Vf-V5c" secondAttribute="bottom" constant="30" id="VyU-DB-7jw"/>
+                            <constraint firstItem="ucq-FX-tEt" firstAttribute="leading" secondItem="yFR-El-Fjm" secondAttribute="trailing" constant="3" id="ah5-3I-tOP"/>
+                            <constraint firstItem="w8M-Vf-V5c" firstAttribute="leading" secondItem="Dib-BR-ZQx" secondAttribute="leading" id="cmR-Zl-f9R"/>
+                            <constraint firstItem="ucq-FX-tEt" firstAttribute="trailing" secondItem="eDF-FX-d2D" secondAttribute="trailing" id="dZA-3z-Cjb"/>
+                            <constraint firstItem="ucq-FX-tEt" firstAttribute="top" secondItem="eDF-FX-d2D" secondAttribute="bottom" constant="-3" id="dnV-v6-0FO"/>
+                            <constraint firstItem="Des-Jf-LH0" firstAttribute="top" secondItem="OGe-04-zb1" secondAttribute="bottom" constant="20" id="f2T-5N-xRz"/>
+                            <constraint firstItem="OGe-04-zb1" firstAttribute="leading" secondItem="eDF-FX-d2D" secondAttribute="trailing" constant="24" id="fc8-ta-DDg"/>
+                            <constraint firstItem="yFR-El-Fjm" firstAttribute="top" secondItem="eDF-FX-d2D" secondAttribute="bottom" constant="-3" id="ppw-cN-tTW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VyU-DB-7jw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="feedImgView" destination="w8M-Vf-V5c" id="eCw-pX-q24"/>
+                        <outlet property="secondsLabel" destination="yFR-El-Fjm" id="flx-uY-9Nj"/>
+                        <outlet property="termSlider" destination="eDF-FX-d2D" id="uEV-xE-1ii"/>
+                        <outlet property="toggleStartBtn" destination="OGe-04-zb1" id="Akh-HL-Ylf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyC-bf-2bk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="160"/>
+        </scene>
+    </scenes>
+</document>

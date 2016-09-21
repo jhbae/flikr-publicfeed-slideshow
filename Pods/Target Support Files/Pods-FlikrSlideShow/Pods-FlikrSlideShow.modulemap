@@ -1,0 +1,6 @@
+framework module Pods_FlikrSlideShow {
+  umbrella header "Pods-FlikrSlideShow-umbrella.h"
+
+  export *
+  module * { export * }
+}

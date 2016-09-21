@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E43D54D6BFBDFF34BAC7DAA /* Pods_FlikrSlideShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF06C2D5226DA68F6FEC09 /* Pods_FlikrSlideShow.framework */; };
+		70FA66831D92694C002A7BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66821D92694C002A7BDF /* AppDelegate.swift */; };
+		70FA66851D92694C002A7BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66841D92694C002A7BDF /* ViewController.swift */; };
+		70FA66881D92694C002A7BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FA66861D92694C002A7BDF /* Main.storyboard */; };
+		70FA668A1D92694C002A7BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FA66891D92694C002A7BDF /* Assets.xcassets */; };
+		70FA668D1D92694C002A7BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FA668B1D92694C002A7BDF /* LaunchScreen.storyboard */; };
+		70FA66981D92694C002A7BDF /* FlikrSlideShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66971D92694C002A7BDF /* FlikrSlideShowTests.swift */; };
+		70FA66A81D926A16002A7BDF /* FeedJSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66A71D926A16002A7BDF /* FeedJSONData.swift */; };
+		70FA66AA1D926AA3002A7BDF /* FlikrApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66A91D926AA3002A7BDF /* FlikrApi.swift */; };
+		70FA66AB1D926AA3002A7BDF /* FlikrApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66A91D926AA3002A7BDF /* FlikrApi.swift */; };
+		70FA66AD1D926AB0002A7BDF /* FlikrRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66AC1D926AB0002A7BDF /* FlikrRestClient.swift */; };
+		70FA66AE1D926AB0002A7BDF /* FlikrRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66AC1D926AB0002A7BDF /* FlikrRestClient.swift */; };
+		70FA66B01D926BAC002A7BDF /* SlideShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66AF1D926BAC002A7BDF /* SlideShowViewModel.swift */; };
+		70FA66B11D926BAC002A7BDF /* SlideShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA66AF1D926BAC002A7BDF /* SlideShowViewModel.swift */; };
+		D185C0CAF5AEA54142F5DD9D /* Pods_FlikrSlideShowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C103B5302035A1C0CDDA7ED /* Pods_FlikrSlideShowTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70FA66941D92694C002A7BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FA66771D92694C002A7BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FA667E1D92694C002A7BDF;
+			remoteInfo = FlikrSlideShow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31BF06C2D5226DA68F6FEC09 /* Pods_FlikrSlideShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlikrSlideShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C103B5302035A1C0CDDA7ED /* Pods_FlikrSlideShowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlikrSlideShowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A203AB576EAAA44E6DEC5F /* Pods-FlikrSlideShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrSlideShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlikrSlideShow/Pods-FlikrSlideShow.debug.xcconfig"; sourceTree = "<group>"; };
+		70FA667F1D92694C002A7BDF /* FlikrSlideShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlikrSlideShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FA66821D92694C002A7BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70FA66841D92694C002A7BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70FA66871D92694C002A7BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70FA66891D92694C002A7BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FA668C1D92694C002A7BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70FA668E1D92694C002A7BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FA66931D92694C002A7BDF /* FlikrSlideShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlikrSlideShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FA66971D92694C002A7BDF /* FlikrSlideShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikrSlideShowTests.swift; sourceTree = "<group>"; };
+		70FA66991D92694C002A7BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FA66A71D926A16002A7BDF /* FeedJSONData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedJSONData.swift; sourceTree = "<group>"; };
+		70FA66A91D926AA3002A7BDF /* FlikrApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlikrApi.swift; sourceTree = "<group>"; };
+		70FA66AC1D926AB0002A7BDF /* FlikrRestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlikrRestClient.swift; sourceTree = "<group>"; };
+		70FA66AF1D926BAC002A7BDF /* SlideShowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowViewModel.swift; sourceTree = "<group>"; };
+		BA8B15F9CE3A065329F8F7C1 /* Pods-FlikrSlideShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrSlideShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlikrSlideShow/Pods-FlikrSlideShow.release.xcconfig"; sourceTree = "<group>"; };
+		CC6AA52CA0C91A8AB0296C28 /* Pods-FlikrSlideShowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrSlideShowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlikrSlideShowTests/Pods-FlikrSlideShowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1889F894DE2B42731DC469 /* Pods-FlikrSlideShowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrSlideShowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlikrSlideShowTests/Pods-FlikrSlideShowTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70FA667C1D92694C002A7BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E43D54D6BFBDFF34BAC7DAA /* Pods_FlikrSlideShow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FA66901D92694C002A7BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D185C0CAF5AEA54142F5DD9D /* Pods_FlikrSlideShowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70FA66761D92694C002A7BDF = {
+			isa = PBXGroup;
+			children = (
+				70FA66811D92694C002A7BDF /* FlikrSlideShow */,
+				70FA66961D92694C002A7BDF /* FlikrSlideShowTests */,
+				70FA66801D92694C002A7BDF /* Products */,
+				7FD2061B6B31AC9273B695F9 /* Pods */,
+				F0C8EB174F9B6FF7C55C75B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70FA66801D92694C002A7BDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70FA667F1D92694C002A7BDF /* FlikrSlideShow.app */,
+				70FA66931D92694C002A7BDF /* FlikrSlideShowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70FA66811D92694C002A7BDF /* FlikrSlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				70FA66A21D9269DC002A7BDF /* Api */,
+				70FA66A31D9269E1002A7BDF /* Data */,
+				70FA66821D92694C002A7BDF /* AppDelegate.swift */,
+				70FA66841D92694C002A7BDF /* ViewController.swift */,
+				70FA66861D92694C002A7BDF /* Main.storyboard */,
+				70FA66891D92694C002A7BDF /* Assets.xcassets */,
+				70FA668B1D92694C002A7BDF /* LaunchScreen.storyboard */,
+				70FA668E1D92694C002A7BDF /* Info.plist */,
+				70FA66AF1D926BAC002A7BDF /* SlideShowViewModel.swift */,
+			);
+			path = FlikrSlideShow;
+			sourceTree = "<group>";
+		};
+		70FA66961D92694C002A7BDF /* FlikrSlideShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				70FA66971D92694C002A7BDF /* FlikrSlideShowTests.swift */,
+				70FA66991D92694C002A7BDF /* Info.plist */,
+			);
+			path = FlikrSlideShowTests;
+			sourceTree = "<group>";
+		};
+		70FA66A21D9269DC002A7BDF /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				70FA66A91D926AA3002A7BDF /* FlikrApi.swift */,
+				70FA66AC1D926AB0002A7BDF /* FlikrRestClient.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		70FA66A31D9269E1002A7BDF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70FA66A71D926A16002A7BDF /* FeedJSONData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		7FD2061B6B31AC9273B695F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52A203AB576EAAA44E6DEC5F /* Pods-FlikrSlideShow.debug.xcconfig */,
+				BA8B15F9CE3A065329F8F7C1 /* Pods-FlikrSlideShow.release.xcconfig */,
+				CC6AA52CA0C91A8AB0296C28 /* Pods-FlikrSlideShowTests.debug.xcconfig */,
+				FF1889F894DE2B42731DC469 /* Pods-FlikrSlideShowTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0C8EB174F9B6FF7C55C75B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31BF06C2D5226DA68F6FEC09 /* Pods_FlikrSlideShow.framework */,
+				4C103B5302035A1C0CDDA7ED /* Pods_FlikrSlideShowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70FA667E1D92694C002A7BDF /* FlikrSlideShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FA669C1D92694C002A7BDF /* Build configuration list for PBXNativeTarget "FlikrSlideShow" */;
+			buildPhases = (
+				8B897E5C9ABFA64E63155E4A /* Check Pods Manifest.lock */,
+				70FA667B1D92694C002A7BDF /* Sources */,
+				70FA667C1D92694C002A7BDF /* Frameworks */,
+				70FA667D1D92694C002A7BDF /* Resources */,
+				ED37B85F0386504EC237C343 /* Embed Pods Frameworks */,
+				3DFFC17E3D27FDEEFBD86C0D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlikrSlideShow;
+			productName = FlikrSlideShow;
+			productReference = 70FA667F1D92694C002A7BDF /* FlikrSlideShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70FA66921D92694C002A7BDF /* FlikrSlideShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FA669F1D92694C002A7BDF /* Build configuration list for PBXNativeTarget "FlikrSlideShowTests" */;
+			buildPhases = (
+				C8EA331FC1E24317505212A7 /* Check Pods Manifest.lock */,
+				70FA668F1D92694C002A7BDF /* Sources */,
+				70FA66901D92694C002A7BDF /* Frameworks */,
+				70FA66911D92694C002A7BDF /* Resources */,
+				D34A11BBF7E24DF561C64D15 /* Embed Pods Frameworks */,
+				4FC17B7928EB91D4DBD8EC2B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FA66951D92694C002A7BDF /* PBXTargetDependency */,
+			);
+			name = FlikrSlideShowTests;
+			productName = FlikrSlideShowTests;
+			productReference = 70FA66931D92694C002A7BDF /* FlikrSlideShowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70FA66771D92694C002A7BDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Luke Bae";
+				TargetAttributes = {
+					70FA667E1D92694C002A7BDF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					70FA66921D92694C002A7BDF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 70FA667E1D92694C002A7BDF;
+					};
+				};
+			};
+			buildConfigurationList = 70FA667A1D92694C002A7BDF /* Build configuration list for PBXProject "FlikrSlideShow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70FA66761D92694C002A7BDF;
+			productRefGroup = 70FA66801D92694C002A7BDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70FA667E1D92694C002A7BDF /* FlikrSlideShow */,
+				70FA66921D92694C002A7BDF /* FlikrSlideShowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70FA667D1D92694C002A7BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FA668D1D92694C002A7BDF /* LaunchScreen.storyboard in Resources */,
+				70FA668A1D92694C002A7BDF /* Assets.xcassets in Resources */,
+				70FA66881D92694C002A7BDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FA66911D92694C002A7BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DFFC17E3D27FDEEFBD86C0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlikrSlideShow/Pods-FlikrSlideShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC17B7928EB91D4DBD8EC2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlikrSlideShowTests/Pods-FlikrSlideShowTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B897E5C9ABFA64E63155E4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8EA331FC1E24317505212A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D34A11BBF7E24DF561C64D15 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlikrSlideShowTests/Pods-FlikrSlideShowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED37B85F0386504EC237C343 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlikrSlideShow/Pods-FlikrSlideShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70FA667B1D92694C002A7BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FA66851D92694C002A7BDF /* ViewController.swift in Sources */,
+				70FA66831D92694C002A7BDF /* AppDelegate.swift in Sources */,
+				70FA66AD1D926AB0002A7BDF /* FlikrRestClient.swift in Sources */,
+				70FA66B01D926BAC002A7BDF /* SlideShowViewModel.swift in Sources */,
+				70FA66A81D926A16002A7BDF /* FeedJSONData.swift in Sources */,
+				70FA66AA1D926AA3002A7BDF /* FlikrApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FA668F1D92694C002A7BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FA66981D92694C002A7BDF /* FlikrSlideShowTests.swift in Sources */,
+				70FA66B11D926BAC002A7BDF /* SlideShowViewModel.swift in Sources */,
+				70FA66AB1D926AA3002A7BDF /* FlikrApi.swift in Sources */,
+				70FA66AE1D926AB0002A7BDF /* FlikrRestClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70FA66951D92694C002A7BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FA667E1D92694C002A7BDF /* FlikrSlideShow */;
+			targetProxy = 70FA66941D92694C002A7BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70FA66861D92694C002A7BDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70FA66871D92694C002A7BDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70FA668B1D92694C002A7BDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70FA668C1D92694C002A7BDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70FA669A1D92694C002A7BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70FA669B1D92694C002A7BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70FA669D1D92694C002A7BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A203AB576EAAA44E6DEC5F /* Pods-FlikrSlideShow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlikrSlideShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperconnect.test.FlikrSlideShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		70FA669E1D92694C002A7BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8B15F9CE3A065329F8F7C1 /* Pods-FlikrSlideShow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlikrSlideShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperconnect.test.FlikrSlideShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		70FA66A01D92694C002A7BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6AA52CA0C91A8AB0296C28 /* Pods-FlikrSlideShowTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlikrSlideShowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperconnect.test.FlikrSlideShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlikrSlideShow.app/FlikrSlideShow";
+			};
+			name = Debug;
+		};
+		70FA66A11D92694C002A7BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1889F894DE2B42731DC469 /* Pods-FlikrSlideShowTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlikrSlideShowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperconnect.test.FlikrSlideShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlikrSlideShow.app/FlikrSlideShow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70FA667A1D92694C002A7BDF /* Build configuration list for PBXProject "FlikrSlideShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FA669A1D92694C002A7BDF /* Debug */,
+				70FA669B1D92694C002A7BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FA669C1D92694C002A7BDF /* Build configuration list for PBXNativeTarget "FlikrSlideShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FA669D1D92694C002A7BDF /* Debug */,
+				70FA669E1D92694C002A7BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FA669F1D92694C002A7BDF /* Build configuration list for PBXNativeTarget "FlikrSlideShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FA66A01D92694C002A7BDF /* Debug */,
+				70FA66A11D92694C002A7BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70FA66771D92694C002A7BDF /* Project object */;
+}
